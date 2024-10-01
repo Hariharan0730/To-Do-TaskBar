@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div>
+
+
+        <div style="display: flex; justify-content: center; align-items: center; ">
+
+            <h1>To-Do-Task</h1>
+
+        </div>
+
+
+        <div style="display: flex; justify-content: center; align-items: center; ">
+
+            <input type="text" placeholder="Enter a task" id="task" />
+
+            <button onclick="addTask()" style="margin: 10px;">Add task</button>
+
+        </div>
+
+
+        <div style="display: flex; justify-content: center; align-items: center; ">
+
+            <div id="task-list"></div>
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+
+
+        function addTask() {
+
+            const taskAdd = document.getElementById("task-list");
+
+            const li = document.createElement("li");
+            li.textContent = "Task Added !";
+
+            taskAdd.appendChild(li);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
